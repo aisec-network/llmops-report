@@ -4,6 +4,8 @@ description: "LLMOps Report covers ML observability and MLOps from a production-
 pubDate: 2026-05-03
 tags: ["meta"]
 category: "site"
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/llmops.report/welcome.png
+heroAlt: "What this site is for"
 ---
 
 LLMOps Report covers ML observability and MLOps from inside production engineering. The kind of writing we wanted to find when we were debugging a model that worked in eval and broke in prod.
