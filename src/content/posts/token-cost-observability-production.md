@@ -16,7 +16,7 @@ sources:
     url: "https://openai.com/api/pricing/"
 schema:
   type: "TechArticle"
-heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/?prompt=clean%20engineering%20dashboard%20showing%20token%20cost%20metrics%2C%20blue%20accent%2C%20professional%20minimal&aspect=hero
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/llmops.report/token-cost-observability-production.png
 heroAlt: "Token cost dashboard visualization"
 ---
 
