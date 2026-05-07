@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2563eb" stop-opacity="0" />
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0.18" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#f8fafc" />
+  <circle cx="1080" cy="80" r="50" fill="#2563eb" opacity="0.85" />
+  
+  <g transform="translate(80, 200)">
+    <text font-family="Inter, system-ui, sans-serif" font-size="78" font-weight="700" fill="#0f172a" letter-spacing="-2">
+      LLMOps Report
+    </text>
+    <text y="120" font-family="Inter, system-ui, sans-serif" font-size="32" fill="#64748b" letter-spacing="0">
+      Deploying language models that actually work.
+    </text>
+    <text y="280" font-family="Inter, monospace" font-size="22" fill="#2563eb" letter-spacing="2" text-transform="uppercase">
+      llmops.report
+    </text>
+  </g>
+</svg>
