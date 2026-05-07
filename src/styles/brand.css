@@ -1,8 +1,4 @@
-/* Brand + visual variant for llmops-report
- * cluster: engineering
- * variant: v7_bold_caps_zine
- * Generated 2026-05-07. Higher specificity than globals.css cluster rules. */
-
+/* Brand for llmops-report: cluster=engineering, variant=v7_bold_caps_zine */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
 
 body[data-cluster='engineering'] {
@@ -25,30 +21,4 @@ body[data-cluster='engineering'] {
 html.dark body[data-cluster='engineering'] {
   --bg: 248 250 252; --fg: 15 23 42; --surface: 241 245 249;
   --accent-500: 37 99 235; --accent-600: 37 99 235;
-}
-
-
-body[data-cluster='engineering'] {
-  --type-scale: 1.618;
-  --space-y: 0.75rem;
-}
-body[data-cluster='engineering'] h1 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.05; }
-body[data-cluster='engineering'] h2 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.15; }
-body[data-cluster='engineering'] h3 { font-size: calc(1rem * var(--type-scale) * var(--type-scale)); line-height: 1.2; }
-body[data-cluster='engineering'] p { margin-block: var(--space-y); }
-
-
-/* Hero / header layout — variant: center */
-body[data-cluster='engineering'] .hero, body[data-cluster='engineering'] header.site-header { text-align: center; padding: 6rem 1rem; }
-
-/* Card style — variant: border-thick */
-body[data-cluster='engineering'] article { border: 4px solid rgb(15 23 42); padding: 1.5rem; }
-
-/* Accent application — variant: background-strip */
-body[data-cluster='engineering'] article::before { content: ''; display: block; height: 8px; background: rgb(37 99 235); margin-bottom: 1rem; }
-
-/* Border radius — variant uses 0 */
-body[data-cluster='engineering'] article,
-body[data-cluster='engineering'] .card {
-  border-radius: 0;
 }
