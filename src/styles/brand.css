@@ -11,7 +11,7 @@ body[data-cluster] {
   --font-display: Tinos, "Times New Roman", Georgia, serif;
   --font-body: "DM Sans", "Helvetica Neue", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --brand-accent-rgb: 22 223 186;
+  --brand-accent-rgb: 0 0 0;
   --brand-identity-font: "f14_serif_recoleta_dmsans";
   --brand-identity-palette: "p30_h169_stone";
   --brand-identity-layout: "dashboard";
@@ -26,7 +26,7 @@ html.dark body[data-cluster] {
   --border: 68 64 60;
   --surface: 28 25 23;
   --surface-alt: 41 37 36;
-  --brand-accent-rgb: 95 242 215;
+  --brand-accent-rgb: 255 255 255;
 }
 
 /* Density modifiers */
