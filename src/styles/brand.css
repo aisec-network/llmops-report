@@ -1,24 +1,35 @@
-/* Brand for llmops-report: cluster=engineering, variant=v7_bold_caps_zine */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+/* Brand for llmops-report: identity=f14_serif_recoleta_dmsans+p30_h169_stone+dashboard+v08_watchdog */
 
-body[data-cluster='engineering'] {
-  --bg: 248 250 252;
-  --fg: 15 23 42;
-  --surface: 241 245 249;
-  --muted: 248 250 252;
-  --muted-fg: 100 116 139;
-  --border: 100 116 139;
-  --font-display: "Inter", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
-  --accent-400: 37 99 235;
-  --accent-500: 37 99 235;
-  --accent-600: 37 99 235;
-  --accent-700: 37 99 235;
-  --brand-tone: "clean-engineering-blue";
-  --brand-accent-rgb: 37 99 235;
-  --brand-variant: "v7_bold_caps_zine";
+body[data-cluster] {
+  --bg: 255 255 255;
+  --fg: 28 25 23;
+  --muted: 250 250 249;
+  --muted-fg: 87 83 78;
+  --border: 231 229 228;
+  --surface: 255 255 255;
+  --surface-alt: 250 250 249;
+  --font-display: Tinos, "Times New Roman", Georgia, serif;
+  --font-body: "DM Sans", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --brand-accent-rgb: 22 223 186;
+  --brand-identity-font: "f14_serif_recoleta_dmsans";
+  --brand-identity-palette: "p30_h169_stone";
+  --brand-identity-layout: "dashboard";
+  --brand-identity-voice: "v08_watchdog";
 }
-html.dark body[data-cluster='engineering'] {
-  --bg: 248 250 252; --fg: 15 23 42; --surface: 241 245 249;
-  --accent-500: 37 99 235; --accent-600: 37 99 235;
+
+html.dark body[data-cluster] {
+  --bg: 28 25 23;
+  --fg: 250 250 249;
+  --muted: 41 37 36;
+  --muted-fg: 168 162 158;
+  --border: 68 64 60;
+  --surface: 28 25 23;
+  --surface-alt: 41 37 36;
+  --brand-accent-rgb: 95 242 215;
 }
+
+/* Density modifiers */
+body.density-loose  { --space-section: 5rem; }
+body.density-normal { --space-section: 3rem; }
+body.density-dense  { --space-section: 1.5rem; }
