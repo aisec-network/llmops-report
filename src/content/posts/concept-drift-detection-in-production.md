@@ -18,7 +18,7 @@ Here's why that happens, and what to do differently.
 
 When people say "concept drift" they usually mean one of three different things:
 
-**Data drift** — the distribution of your input features has shifted. This is the easiest to detect because you don't need ground truth. Feature distributions are observable the moment a request hits your model.
+**[Data drift](https://mlmonitoring.report/)** — the distribution of your input features has shifted. This is the easiest to detect because you don't need ground truth. Feature distributions are observable the moment a request hits your model.
 
 **Label drift** — the marginal distribution of the thing you're predicting has changed. If you're predicting churn, and churn rate doubles because the economy tanked, label drift is happening. Your model didn't get worse — the target itself moved.
 
@@ -73,3 +73,5 @@ Don't instrument everything on day one. Instrument the features your model most 
 The goal isn't a dashboard full of green checks. It's knowing, within a day, when your model's relationship to the world has shifted enough to matter.
 
 That bar is lower than teams think. You don't need a sophisticated ML monitoring platform to meet it. You need clear definitions of what "drift" means in your context, thresholds tied to business outcomes, and the discipline to not add an alert every time a feature moves.
+
+For more context, [ML observability tools](https://mlobserve.com/) covers related topics in depth.

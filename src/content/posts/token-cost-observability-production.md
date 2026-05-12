@@ -68,7 +68,7 @@ We've caught all four in production with this single rule. The latency-cost prod
 
 ### Cache hit rate and savings
 
-Every production LLM app should have semantic and exact-match caching layers. The metrics that matter:
+Every production LLM app should have semantic and exact-match caching layers. The [metrics](https://mlobserve.com/) that matter:
 
 - Hit rate per feature
 - Dollar savings (sum of avoided calls × estimated cost)
@@ -99,3 +99,5 @@ Don't trust the provider's billing API as your primary cost source. It lags 24-7
 Don't over-instrument with vendor-specific SDKs that lock you in. The semantic conventions are stable enough now that vendor switching should be a configuration change, not a rewrite.
 
 Don't optimize cost before measuring it. Most "cost optimizations" are actually quality regressions in disguise. Measure first, then optimize the items that show up. Most cost is concentrated in the top 3 features; the long tail isn't worth touching.
+
+For more context, [ML monitoring practices](https://mlmonitoring.report/) covers related topics in depth.

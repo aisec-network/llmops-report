@@ -14,7 +14,7 @@ This isn't a vendor brief. It's based on production use in environments with 50K
 
 ## What each tool is actually doing
 
-**Evidently** is an open-source Python library that generates data drift and model performance reports. You point it at two dataframes — baseline and production — and it produces statistical comparisons, visualizations, and optionally a monitoring dashboard. It's designed to run in your infrastructure, in your pipelines, on your schedule.
+**Evidently** is an open-source Python library that generates [data drift](https://mlmonitoring.report/) and model performance reports. You point it at two dataframes — baseline and production — and it produces statistical comparisons, visualizations, and optionally a monitoring dashboard. It's designed to run in your infrastructure, in your pipelines, on your schedule.
 
 **Arize** is a managed observability platform. You instrument your model to log predictions and (when available) actuals to their cloud service, then use their UI to slice, query, and alert on performance over time. It's designed to be the central place where ML teams investigate what's happening in production.
 
@@ -61,3 +61,5 @@ If you have a real-time serving system, a team bigger than ~5 engineers working 
 If you're running both LLM and traditional ML workloads: look at what Arize's LLM observability features look like versus your specific needs. That's a separate evaluation from their classical ML monitoring, and the maturity gap between the two is significant.
 
 Neither tool is a substitute for knowing what your model actually needs to be monitored. That's the work you have to do first, regardless of which platform you choose.
+
+For more context, [ML observability tools](https://mlobserve.com/) covers related topics in depth.

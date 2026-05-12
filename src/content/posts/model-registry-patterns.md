@@ -8,7 +8,7 @@ heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/llmops.rep
 heroAlt: "Model registry patterns in production ML systems"
 ---
 
-Everyone building a serious ML system eventually needs a model registry. The pitch is simple: a central place to version, store, and manage models. Track which model is in production. Roll back when something goes wrong. Audit who deployed what and when.
+Everyone building a serious ML system eventually needs a [model registry](https://mlopsplatforms.com/). The pitch is simple: a central place to version, store, and manage models. Track which model is in production. Roll back when something goes wrong. Audit who deployed what and when.
 
 In practice, most registries become a metadata graveyard within six months. Thousands of model versions nobody can explain. Tags that mean nothing. A "production" stage that nobody trusts to actually reflect what's live.
 
@@ -20,7 +20,7 @@ Model registry vendors and tutorials focus on the artifact storage and lineage t
 
 **The registry is not your source of truth for what's in production.** Your serving infrastructure is. If your model is deployed to Kubernetes, the running pod is what's live. The registry just tracks what should be live, and only if someone bothered to update it. In teams that don't enforce registry updates as part of deployment, the registry and production diverge within weeks.
 
-**Metadata quality degrades unless you automate it.** Nobody manually fills in accuracy metrics, training dataset versions, and hyperparameter configs after their fifteenth model iteration of the day. You have to capture this automatically at training time or it doesn't happen.
+**Metadata quality degrades unless you automate it.** Nobody manually fills in accuracy [metrics](https://mlobserve.com/), training dataset versions, and hyperparameter configs after their fifteenth model iteration of the day. You have to capture this automatically at training time or it doesn't happen.
 
 **Promotion workflows are political, not technical.** The real challenge with model registries isn't versioning — it's deciding who has authority to promote a model from staging to production, what evidence is required, and how to handle rollbacks when stakeholders disagree. That's a process problem. Clicking "promote" in an MLflow UI doesn't solve it.
 

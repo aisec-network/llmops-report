@@ -64,6 +64,8 @@ When debugging suspected skew, check in this order:
 
 The best long-term fix is to compute features in exactly one place and reuse that computation for both training and serving. Feature stores (Feast, Tecton, Hopsworks, or home-built) exist specifically for this. When training and serving both read from the same feature store, most classes of skew go away.
 
-The downside: feature stores add infrastructure and operational complexity. For a team early in their MLOps journey, that trade is often not worth it. But if you're regularly debugging production model degradation and it keeps tracing back to feature computation differences, that's the sign to invest.
+The downside: feature stores add infrastructure and operational complexity. For a team early in their MLOps journey, that trade is often not worth it. But if you're regularly debugging production model degradation and it keeps [tracing](https://mlobserve.com/) back to feature computation differences, that's the sign to invest.
 
 Until then: shadow execution, feature logging, and religious version pinning. Skew doesn't care how sophisticated your model is. It degrades everything equally.
+
+For more context, [ML monitoring practices](https://mlmonitoring.report/) covers related topics in depth.
