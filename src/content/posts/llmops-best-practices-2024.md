@@ -14,6 +14,7 @@ sources:
     url: "https://agenta.ai/blog/prompt-versioning-guide"
 schema:
   type: "TechArticle"
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/llmops.report/llmops-best-practices-2024.png
 ---
 
 If you search for llmops best practices 2024, you'll find a flood of posts describing the same high-level lifecycle diagram. This one skips the diagram. The teams that successfully run LLM applications in production share a handful of concrete habits that most tutorials gloss over — around prompt management, observability, evaluation pipelines, and cost governance. Here is what those practices actually look like.
